@@ -7,7 +7,7 @@ services:
     container_name: helplightning
     command: "-jar DynamoDBLocal.jar -sharedDb -dbPath /data"
     volumes:
-      - ./dynamodb-data:/data
+      - ./dynamodb-datum:/data
     ports:
       - "8000:8000"
     expose:
